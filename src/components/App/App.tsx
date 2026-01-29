@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
-import SearchBar from "./SearchBar/SearchBar";
-import MovieGrid from "./MovieGrid/MovieGrid";
-import Loader from "./Loader/Loader";
-import MovieModal from "./MovieModal/MovieModal";
+import SearchBar from "../SearchBar/SearchBar";
+import MovieGrid from "../MovieGrid/MovieGrid";
+import Loader from "../Loader/Loader";
+import MovieModal from "../MovieModal/MovieModal";
 import { fetchMovies } from "../../services/movieService";
 import type { Movie } from "../../types/movie";
-import ErrorMessage from "./ErrorMessage/ErrorMessage";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 export default function App() {
   const [query, setQuery] = useState("");
